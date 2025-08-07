@@ -8,7 +8,7 @@ html {
   margin: 0;
   padding: 0; 
   box-sizing: border-box;
-  font-family: "Spartan", san-serif;
+  font-family: "Spartan", sans-serif;
 }
 
 h1{
@@ -55,7 +55,7 @@ body{
 }
 
 
-
+/*====================CSS HEADER, DÙNG CHUNG CHO TẤT CẢ CÁC TRANG=====================*/
 #header{
   position: fixed;
   width: 100%;
@@ -130,6 +130,7 @@ display: none;
   bottom: -4px;
   left: 20px;
 }
+/*====================KẾT THÚC CSS HEADER=====================*/
 
 #hero{
   background-image: url("https://i.postimg.cc/cCwBHzDV/hero4.png");
@@ -148,9 +149,6 @@ display: none;
 
 #hero h1{
   color: #088178;
-  
-}
-#hero h2{
   
 }
 
