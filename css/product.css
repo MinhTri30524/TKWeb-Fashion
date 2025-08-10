@@ -358,6 +358,18 @@ footer .copyright {
 }
 /*====================KẾT THÚC CSS FOOTER=====================*/
 
+footer .logo{
+  margin-bottom: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+}
+#header .logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+}
+
 /*====================CSS RESPONSIVE, DÙNG CHUNG CHO TẤT CẢ CÁC TRANG=====================*/
 @media (max-width: 768px) {
 

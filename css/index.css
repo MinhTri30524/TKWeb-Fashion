@@ -69,6 +69,12 @@ body{
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06)
 }
 
+#header .logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+}
+
 #navbar{
   display: flex;
   align-items: center;
@@ -533,6 +539,9 @@ footer .sec{
 
 footer .logo{
   margin-bottom: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
 }
 
 footer h4{

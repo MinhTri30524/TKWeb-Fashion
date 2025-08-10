@@ -3,48 +3,56 @@ const proContainer = document.querySelector('.pro-container');
 // Trang 2: danh sách sản phẩm
 const page2Products = [
   {
+    id: 9,
     img: "../assets/images/p1.jpg",
     brand: "nike",
     title: "Cool Black Shirt",
     price: "$55"
   },
   {
+    id: 10,
     img: "../assets/images/p2.jpg",
     brand: "nike",
     title: "Summer Grey T-shirt",
     price: "$60"
   },
   {
+    id: 11,
     img: "../assets/images/p3.jpg",
     brand: "puma",
     title: "Chill Pink Shorts",
     price: "$40"
   },
   {
+    id: 12,
     img: "../assets/images/p4.jpg",
     brand: "puma",
     title: "Funky Yellow Tee",
     price: "$48"
   },
   {
+    id: 13,
     img: "../assets/images/p5.jpg",
     brand: "nike",
     title: "Cool Black Shirt",
     price: "$55"
   },
   {
+    id: 14,
     img: "../assets/images/p6.jpg",
     brand: "nike",
     title: "Summer Grey T-shirt",
     price: "$60"
   },
   {
+    id: 15,
     img: "../assets/images/p7.jpg",
     brand: "puma",
     title: "Chill Pink Shorts",
     price: "$40"
   },
   {
+    id: 16,
     img: "../assets/images/p8.jpg",
     brand: "puma",
     title: "Funky Yellow Tee",
@@ -54,7 +62,7 @@ const page2Products = [
 
 function createProductHTML(product) {
   return `
-    <div class="pro">
+    <div class="pro" onclick="goToProductDetail(${product.id})">
       <img src="${product.img}" alt="">
       <div class="des">
         <span>${product.brand}</span>
