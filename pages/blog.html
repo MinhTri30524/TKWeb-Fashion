@@ -1,14 +1,14 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shop</title>
-    <link rel="stylesheet" href="../css/payment.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Ecommerce Website</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/blog.css">
     <script src="https://kit.fontawesome.com/dad03e859c.js" crossorigin="anonymous"></script>
+     <script src="https://kit.fontawesome.com/dad03e859c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -35,84 +35,40 @@
         </div>
     </header>
 
-    <div class="checkout-container">
-        <!-- Thông tin khách hàng -->
-        <div class="checkout-left">
-            <h2 class="checkout-info">Shipping Information</h2>
-            <form>
-                <label>Full Name</label>
-                <input type="text" placeholder="Enter your full name" />
-
-                <label>Email</label>
-                <input type="email" placeholder="Enter your email" />
-
-                <label>Phone number</label>
-                <input type="text" placeholder="Enter your phone number" />
-
-                <label>Address</label>
-                <input type="text" placeholder="Enter your address" />
-
-                <label>City</label>
-                <input type="text" placeholder="Enter your city" />
-
-                <label>Note</label>
-                <textarea placeholder="Enter your note"></textarea>
-            </form>
+    <section class="blog-banner">
+        <div class="banner-text">
+            <h1>#ourblog</h1>
+            <p>Fashion trends, styling tips, and more – read our latest posts!</p>
         </div>
+    </section>
 
-        <!-- Giỏ hàng -->
-        <div class="checkout-right">
-            <h2 class="checkout-info">Your Cart</h2>
-            <div class="select-all-wrapper">
-                <input type="checkbox" id="select-all" />
-                <label for="select-all">All products</label>
-            </div>
-
-
-            <div class="cart-item">
-                <input type="checkbox" class="select-item" />
-
-                <img src="../assets/images/10.jpg" alt="product" />
-
-                <div class="item-details">
-                    <div class="item-options">
-                        <label>Size:
-                            <select class="styled-select">
-                                <option>S</option>
-                                <option>M</option>
-                                <option>L</option>
-                                <option selected>XL</option>
-                            </select>
-                        </label>
-
-                        <label>Quantity:
-                            <select class="styled-select">
-                                <option selected>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        </label>
-                    </div>
-
-                    <p class="price">$78</p>
-                </div>
-
-                <button class="delete-btn">🗑️</button>
-            </div>
-
-            <div class="cart-total">
-                <p>Total: <strong id="total-amount">$78</strong></p>
-                <button class="checkout-btn">Check out now</button>
+    <!-- Blog List -->
+    <section class="blog-container">
+        <div class="blog-card">
+            <img src="../assets/images/OIG2.jpg" alt="Blog 1">
+            <div class="blog-info">
+                <h3>Summer Fashion 2025</h3>
+                <p>Discover the latest summer styles for men and women...</p>
+                <a href="#">Read More →</a>
             </div>
         </div>
-
-
-    </div>
-
-
-
+        <div class="blog-card">
+            <img src="../assets/images/OIG4.jpg" alt="Blog 2">
+            <div class="blog-info">
+                <h3>5 Tips to Style Shirts</h3>
+                <p>Make your outfit stand out with these styling tips...</p>
+                <a href="#">Read More →</a>
+            </div>
+        </div>
+        <div class="blog-card">
+            <img src="../assets/images/ok-1.jpg" alt="Blog 3">
+            <div class="blog-info">
+                <h3>Best Accessories for Men</h3>
+                <p>From watches to sunglasses, here’s what’s trending...</p>
+                <a href="#">Read More →</a>
+            </div>
+        </div>
+    </section>
     <footer class="section-p1">
 
         <div class="col">
@@ -172,8 +128,6 @@
         </div>
 
     </footer>
-    <script src="../js/product.js"></script>
-    <script src="../js/main.js"></script>
 </body>
 
 </html>
