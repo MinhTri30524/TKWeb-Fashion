@@ -1,5 +1,12 @@
 const proContainer = document.querySelector('.pro-container');
 
+// const mobileMenu = document.querySelector('#mobile');
+// const navbar = document.querySelector('#navbar');
+
+// mobileMenu.addEventListener('click', () => {
+//   navbar.classList.toggle('active');
+// });
+
 // Trang 2: danh sách sản phẩm
 const page2Products = [
   {
@@ -100,4 +107,20 @@ paginationLinks.forEach(link => {
     this.classList.add('active');
   });
 });
+
+const bar = document.getElementById('bar')
+const close = document.getElementById('close')
+const nav = document.getElementById('navbar')
+
+if (bar) {
+  bar.addEventListener('click', () => {
+    nav.classList.add('active')
+  })
+ 
+ if (close) {
+   close.addEventListener('click', () => {
+     nav.classList.remove('active')
+   })
+ }
+}
 

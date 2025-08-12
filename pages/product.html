@@ -16,19 +16,19 @@
         <a href="#"><img src="/assets/images/Logo Thời Trang Tuổi Trẻ.png" class="logo"></a>
         <div>
             <ul id="navbar">
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html" id="lg-bag"><i class="fal fa-shopping-bag"></i></a>
+                <li><a href="payment.html" id="lg-bag"><i class="fal fa-shopping-bag"></i></a>
                     <span class="quantity">0</span>
                 </li>
-                <li><a href="#" id="close"></a> <i class="far fa-times"></i></a></li>
+                <li><a href="#" id="close"></a> X</a></li>
             </ul>
         </div>
         <div id="mobile">
-            <a href="cart.html"><i class="fal fa-shopping-bag"></i>
+            <a href="payment.html"><i class="fal fa-shopping-bag"></i>
                 <span class="quantity">0</span>
             </a>
             <i id="bar" class="fas fa-outdent"></i>
@@ -75,7 +75,7 @@
     <section id="product1" class="section-p1">
         <h2>Interested In</h2>
         <div class="pro-container">
-            <div class="pro" onclick="window.location.href='https://codepen.io/Motun/full/OJBwbrQ'">
+            <div class="pro" onclick="goToProductDetail(17)">
                 <img src="https://i.postimg.cc/kg9YYbTn/f1.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -93,7 +93,7 @@
             </div>
 
 
-            <div class="pro">
+            <div class="pro" onclick="goToProductDetail(18)">
                 <img src="https://i.postimg.cc/2yhT2kvb/f2.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -111,7 +111,7 @@
             </div>
 
 
-            <div class="pro">
+            <div class="pro" onclick="goToProductDetail(19)">
                 <img src="https://i.postimg.cc/VL9DtNm2/f3.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -129,7 +129,7 @@
             </div>
 
 
-            <div class="pro">
+            <div class="pro" onclick="goToProductDetail(32)">
                 <img src="https://i.postimg.cc/vZ3hPS1z/f4.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -148,7 +148,7 @@
 
 
 
-            <div class="pro">
+            <div class="pro" onclick="goToProductDetail(20)">
                 <img src="https://i.postimg.cc/q7FLrhx6/f5.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -167,7 +167,7 @@
 
 
 
-            <div class="pro">
+            <div class="pro" onclick="goToProductDetail(21)">
                 <img src="https://i.postimg.cc/L86BZByZ/f7.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -186,7 +186,7 @@
 
 
 
-            <div class="pro">
+            <div class="pro" onclick="goToProductDetail(22)">
                 <img src="https://i.postimg.cc/zDxJ2f0H/f6.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -205,7 +205,7 @@
 
 
 
-            <div class="pro">
+            <div class="pro" onclick="goToProductDetail(23)">
                 <img src="https://i.postimg.cc/x8qcBrpP/n6.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -287,6 +287,11 @@
     </footer>
     <script src="../js/product.js"></script>
     <script src="../js/main.js"></script>
+    <script>
+        function goToProductDetail(productId) {
+            window.location.href = `product.html?id=${productId}`;
+        }
+    </script>
 </body>
 
 </html>
